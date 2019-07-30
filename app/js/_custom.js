@@ -25,6 +25,11 @@ $(document).ready(function () {
         }
     });
 
+    $('button.btn.btn-link').on('click', function () {
+       $('button.btn.btn-link').removeClass('active');
+       $(this).addClass('active');
+       $(this).parents('.card').find('.collapse').slideToggle();
+    });
 
     function Calendar2(id, year, month) {
         var Dlast = new Date(year, month + 1, 0).getDate(),
