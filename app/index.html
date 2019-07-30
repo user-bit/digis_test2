@@ -2,45 +2,345 @@
 <html lang="ru">
 
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<title>DIGIS</title>
-	<meta name="description" content="Test DIGIS">
+    <title>DIGIS</title>
+    <meta name="description" content="Test DIGIS">
 
-	<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 
-	<link rel="icon" href="img/favicon.png">
-	<meta property="og:image" content="img/@1x/preview.jpg">
-	
-	<link rel="stylesheet" href="css/styles.min.css">
+    <link rel="icon" href="img/favicon.png">
+    <meta property="og:image" content="img/@1x/preview.jpg">
+
+    <link rel="stylesheet" href="css/styles.min.css">
 
 </head>
 
 <body>
+<main class="main">
+    <div class="container d-flex">
+        <div class="top-slider col">
+            <div class="owl-carousel owl-main">
+                <div class="item">
+                    <img src="img/_src/slide-1.jpg" alt="slide 1">
+                </div>
+                <div class="item">
+                    <img src="img/_src/slide-2.jpg" alt="slide 2">
+                </div>
+                <div class="item">
+                    <img src="img/_src/slide-3.jpg" alt="slide 3">
+                </div>
+            </div>
+        </div>
+        <div class="social-section col">
+            <div class="item-social twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+            <div class="item-social instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+            <div class="item-social google-plus">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </div>
+            <div class="item-social facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="info-block col">
+            <img src="img/_src/iron-man.jpg" alt="iron man">
+            <div class="info-iron">
+                <p>Tony Stark is Iron Man</p>
+                <span>Posted on 30th August 2013</span>
+            </div>
+            <div class="iron-bottom-info">
+                <div class="list-info">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <p>256</p>
+                </div>
+                <div class="list-info">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <p>12</p>
+                </div>
+                <div class="list-info">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <p>83</p>
+                </div>
 
-	<!-- Custom HTML / Remove before use -->
+            </div>
+        </div>
+    </div>
 
-	<div class="container">
+    <div class="container mt-30 d-flex">
+        <div class="left-middle col">
+            <div class="xs-menu">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <p>menu</p>
+            </div>
+            <ul class="menu-list">
+                <li class="item-menu home-icon">
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">About</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Services</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Services</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Portfolio</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="item-menu search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
-		<div class="parent"> <!-- Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/ -->
-			<img class="lazy img-responsive example-img"
-			src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-			data-src="img/@1x/preview.jpg"
-			data-srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x"
-			alt="Start HTML5 Template">
-		</div>
-		<br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. <em>Ad distinctio animi</em>, dolorum eaque praesentium unde aliquid, mollitia itaque voluptate quos modi et incidunt tempora fugiat voluptatum quia esse dolor repellat.</p>
-		<br>
-		<div class="example-grid">
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo vero molestias, esse doloribus corrupti, nemo minus ullam tempore tenetur magni aut quos soluta sit adipisci eius expedita amet non.</div>
-			<div>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
-		</div>
+            <div class="d-flex mt-30">
+                <div class="in-left">
+                    <div class="info-left">
+                        <img src="img/_src/black-widow.jpg" alt="black widow">
+                        <p>Scarlett Johansson</p>
+                        <span>Black Widow</span>
+                        <button class="btn-widow">Follow <span>+</span></button>
+                    </div>
+                </div>
+                <div class="disp-flex w-75 pl-30">
+                    <div class="w-48">
+                        <div class="weather-block">
+                            <div class="top_info">
+                                <p>Exeter, UK</p>
+                                <p><span>&#176;F</span> &#176;C</p>
+                            </div>
+                            <div class="main-section">
+                                <i class="fa fa-cloud" aria-hidden="true"></i>
+                                <p>21&#176;</p>
+                            </div>
+                            <div class="list-weather">
+                                <div class="item-weather">
+                                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                                    <p>Monday</p>
+                                </div>
+                                <div class="item-weather">
+                                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                                    <p>Tuesday</p>
+                                </div>
+                                <div class="item-weather">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    <p>Wednesday</p>
+                                </div>
+                                <div class="item-weather">
+                                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                                    <p>Thursday</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-48 xs-top-30">
+                        <table id="calendar2">
+                            <thead>
+                            <tr class="top-calendar">
+                                <td class="left-icon"><span>‹</span>
+                                <td colspan="5">
+                                <td class="right-icon"><span>›</span>
+                            <tr class="day-calendar">
+                                <td>M
+                                <td>T
+                                <td>W
+                                <td>T
+                                <td>F
+                                <td>S
+                                <td>S
+                            <tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-middlec col">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                Web design
+                                <span>12</span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                         data-parent="#accordion">
+                        <ul class="list-drop">
+                            <li>Ecommerce <span>3</span></li>
+                            <li>Blogs <span>3</span></li>
+                            <li>Portfolio <span>3</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                Print Design
+                                <span>16</span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <ul class="list-drop">
+                            <li>Ecommerce <span>9</span></li>
+                            <li>Blogs <span>8</span></li>
+                            <li>Portfolio <span>3</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                Photography
+                                <span>52</span>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordion">
+                        <ul class="list-drop">
+                            <li>Ecommerce <span>6</span></li>
+                            <li>Blogs <span>3</span></li>
+                            <li>Portfolio <span>3</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="switch mt-30">
+                <div class="item-switch">
+                    <p>Switch ON</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="item-switch">
+                    <p>Switch OFF</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="item-switch">
+                    <input type="range" min="0" max="100" value="10"/>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	</div>
+    <div class="container mt-30">
+        <div class="bottom-flex">
+            <div class="left-bottom">
+                <div class="drop-section">
+                    <div class="dropdown-block">
+                        <p>Dropdown Normal</p>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
 
-	<script src="js/scripts.min.js"></script>
+                    <div class="drop-result">
+                        <ul>
+                            <li>Option One</li>
+                            <li>Option Two</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="drop-section active-drop">
+                    <div class="dropdown-block active-drop">
+                        <p>Dropdown Normal</p>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="drop-result">
+                        <ul>
+                            <li>Option One</li>
+                            <li>Option Two</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dangers-block">
+                <div class="dangers-list">
+                    <div class="dangers-item dangers-green">
+                        <p>Congratulations! You have been successfully </p>
+                        <div class="close">
+                            <span>x</span>
+                        </div>
+                    </div>
+                    <div class="dangers-item dangers-blue">
+                        <p>Attention! I recommend you look at me </p>
+                        <div class="close">
+                            <span>x</span>
+                        </div>
+                    </div>
+                    <div class="dangers-item dangers-yellow">
+                        <p>Warning! A you sure you want to be this</p>
+                        <div class="close">
+                            <span>x</span>
+                        </div>
+                    </div>
+                    <div class="dangers-item dangers-red">
+                        <p>Ooops! Somethings gone wrong</p>
+                        <div class="close">
+                            <span>x</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-form">
+                <form class="feedback">
+                    <div class="form-div w-50-form">
+                        <input class="control-form" type="text" name="name" placeholder="Username">
+                    </div>
+                    <div class="form-div w-50-form">
+                        <input class="control-form" type="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-div w-70-form">
+                        <input class="control-form error-form" type="email" name="password"
+                               placeholder="Please use correct email">
+                    </div>
+                    <div class="form-div w-30-form">
+                        <input class="control-form" type="text" name="active" placeholder="Active">
+                    </div>
+                    <div class="textarea-div">
+                        <textarea class="textarea-control" placeholder="Message" name="message" type="text"></textarea>
+                        <button type="submit" class="send-form">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+<script src="js/scripts.min.js"></script>
 </body>
 </html>

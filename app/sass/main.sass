@@ -34,7 +34,7 @@ body
 // Custom Sass / Remove before use
 
 .container
-	max-width: 700px
+	max-width: 1140px
 	padding:
 		right: $gutter/2
 		left: $gutter/2
@@ -64,5 +64,887 @@ body
 .example-img
 	width: 100%
 
-.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+*, :before, :after
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+input, textarea, select
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	border-radius: 0
+
+html
+	width: 100%
+	height: 100%
+	font-size: 16px
+
+body
+	margin: 0
+	width: 100%
+	display: flex
+	height: 100%
+	font-family: 'Open Sans', sans-serif
+	font-size: 100%
+	color: #fffefe
+	background-image: linear-gradient(to right top, #016158, #055a86, #053a74)
+	background-repeat: no-repeat
+	background-attachment: fixed
+	padding: 60px 0
+
+main.main
+	-ms-flex: 1 0 auto
+	-webkit-box-flex: 1
+	flex: 1 0 auto
+
+a
+	text-decoration: none
+	cursor: pointer
+	color: #fffefe
+	word-wrap: normal
+	&:hover, &:focus
+		text-decoration: none
+		cursor: pointer
+		color: #fffefe
+		word-wrap: normal
+
+img
+	max-width: 100%
+
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+fieldset
+	border: none
+	margin: 0
+	padding: 0
+
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+	padding: 0
+
+.flex-centered
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+
+.flex-left
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: start
+	-ms-flex-pack: start
+	justify-content: flex-start
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+
+.flex-right
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: end
+	-ms-flex-pack: end
+	justify-content: flex-end
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+
+.social-section
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 25%
+
+.google-plus, .facebook
+	margin-top: 30px
+
+.item-social
+	background: #bdbdbd
+	width: 44.5%
+	text-align: center
+	height: 106px
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: .2s
+	cursor: pointer
+	i
+		font-size: 58px
+	&.twitter
+		background: #00ACED
+		&:hover
+			background: #2ec5fd
+	&.instagram
+		background: #EC4A89
+		&:hover
+			background: #ff2379
+	&.google-plus
+		background: #D6492F
+		&:hover
+			background: #ff3c18
+	&.facebook
+		background: #3A589B
+		&:hover
+			background: #16409a
+
+.owl-main
+	.owl-nav
+		position: absolute
+		bottom: 0
+		background: #fff
+		width: 100%
+		height: 46px
+		display: flex
+		justify-content: space-between
+		button
+			&.owl-next
+				background: #00b2b2
+				font-size: 32px
+				line-height: 1
+				position: relative
+				transition: .4s
+				z-index: 9
+				outline: none !important
+			&.owl-prev
+				background: #00b2b2
+				font-size: 32px
+				line-height: 1
+				position: relative
+				transition: .4s
+				z-index: 9
+				outline: none !important
+				span
+					padding: 4px 22px 12px 20px
+					display: block
+			&.owl-next
+				span
+					padding: 4px 20px 12px 22px
+					display: block
+				&:before
+					content: ""
+					position: absolute
+					left: 50%
+					top: 50%
+					border: 1px solid #fff
+					width: 38px
+					height: 38px
+					border-radius: 50%
+					transform: translate(-50%, -50%)
+					transition: .4s
+			&.owl-prev:before
+				content: ""
+				position: absolute
+				left: 50%
+				top: 50%
+				border: 1px solid #fff
+				width: 38px
+				height: 38px
+				border-radius: 50%
+				transform: translate(-50%, -50%)
+				transition: .4s
+			&.owl-next:hover, &.owl-prev:hover
+				color: #c5c5c5
+			&.owl-next:hover:before, &.owl-prev:hover:before
+				border: 1px solid #c5c5c5
+	.owl-dots
+		position: absolute
+		width: 100%
+		height: 46px
+		bottom: 0
+		display: flex
+		align-items: center
+		justify-content: center
+		button
+			background: #00B2B2
+			width: 14px
+			height: 14px
+			border-radius: 50%
+			margin: 0 5px
+			outline: none !important
+			&.owl-dot.active
+				background: #fff
+				border: 1px solid #00b2b2
+
+.info-iron
+	background: #fff
+	padding: 15px 5px 15px 10px
+
+.info-block img
+	height: 145px
+	object-fit: cover
+
+.info-iron
+	p
+		color: #585858
+		font-size: 13px
+		font-family: 'Open Sans', sans-serif
+	span
+		font-family: 'Open Sans', sans-serif
+		color: #00B2B2
+		font-size: 9px
+		display: block
+
+.iron-bottom-info
+	display: flex
+	justify-content: space-between
+	background: #00B2B2
+
+.list-info
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 33%
+	border-right: 1px solid #fff
+	padding: 8px 0
+	&:last-child
+		border: unset
+	p
+		font-size: 12px
+		line-height: 1
+		padding: 2px 0 0 5px
+
+.owl-main img
+	height: 240px
+	object-fit: cover
+
+.mt-30
+	margin-top: 30px
+
+ul.menu-list
+	background: #fff
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+
+li.item-menu
+	height: 60px
+	padding: 0 25px
+	text-align: center
+	border-right: 1px solid #676767
+	display: flex
+	align-items: center
+	transition: .4s
+	cursor: pointer
+	a
+		color: #676767
+		font-size: 14px
+	&.home-icon i
+		font-size: 26px
+		color: #676767
+	&:hover
+		background: #00b2b2
+		a, i
+			color: #fff
+	&:last-child
+		border-right: unset
+	&.search:hover
+		background: unset
+
+.input-group-append
+	width: 36px
+	background: #00b2b2
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	transition: .3s
+	&:hover
+		background: #047b7b
+
+input.form-control
+	border-radius: 0
+	background: #EEEEEE
+	border: 1px solid #EEEEEE
+	font-size: 15px
+	&:focus
+		border: 1px solid #EEEEEE
+		box-shadow: unset
+
+.card
+	border-radius: 0
+	border: unset
+	border-bottom: 1px solid #0376a7
+
+.card-header
+	padding: 0
+	background: #00b2b2
+	border: unset
+	border-radius: unset !important
+
+button.btn.btn-link
+	color: #fff
+	font-size: 14px
+	padding: 7px 0 7px 15px
+	width: 100%
+	text-align: left
+	position: relative
+	z-index: 2
+	text-decoration: none
+
+ul.list-drop li
+	color: #676767
+	font-size: 12px
+	border-bottom: 1px solid #676767
+	padding: 7px 15px 7px 15px
+	position: relative
+
+button.btn.btn-link:hover
+	text-decoration: none
+
+.card-header
+	i
+		font-size: 12px
+		position: absolute
+		right: 7px
+		top: 14px
+		transition: .4s
+	span
+		font-size: 10px
+		position: absolute
+		right: 21px
+		top: 7px
+		border: 1px solid #fff
+		padding: 3px 4px
+		border-radius: 50%
+
+button.btn.btn-link.collapsed i
+	transform: rotate(180deg)
+
+ul.list-drop li span
+	position: absolute
+	right: 8px
+	border: 1px solid #676767
+	border-radius: 50%
+	padding: 3px 5px
+	top: 6px
+	line-height: 1
+	font-size: 11px
+
+.info-left
+	background: #fff
+	img
+		border-radius: 50%
+		width: 160px
+		height: 160px
+		object-fit: cover
+	background: #fff
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: center
+	padding: 30px 0 20px
+	p
+		color: #676767
+		margin-top: 28px
+		font-size: 18px
+	span
+		display: block
+		width: 100%
+		text-align: center
+		color: #00b2b2
+		line-height: 1
+		font-size: 14px
+		padding-top: 5px
+	&:before
+		content: ""
+		position: absolute
+		width: 175px
+		height: 175px
+		border: 2px solid #00b2b2
+		top: 22px
+		border-radius: 50%
+
+button.btn-widow
+	margin-top: 20px
+	display: flex
+	background: #00b2b2
+	color: #fff
+	font-size: 15px
+	padding: 8px 66px 8px 48px
+	position: relative
+	border: 1px solid #00b2b2
+	cursor: pointer
+	transition: .3s
+	outline: none !important
+	span
+		position: absolute
+		color: #fff
+		border: 1px solid #fff
+		width: 24px
+		height: 24px
+		right: 30px
+		top: 7px
+		line-height: 1
+		border-radius: 60%
+		font-size: 22px
+		padding: 0
+		display: flex
+		justify-content: center
+		align-items: center
+	&:hover
+		color: #00b2b2
+		background: #fff
+		span
+			color: #00b2b2
+			border: 1px solid #00b2b2
+
+.weather-block
+	background: #00b2b2
+
+.list-weather
+	display: flex
+
+.item-weather
+	text-align: center
+	width: 25%
+	border: 1px #036C85
+	border-style: solid solid none none
+	padding: 12px 2px
+	cursor: pointer
+	transition: .3s
+	&:hover
+		background: #fff
+		color: #00b2b2
+	&:last-child
+		border-style: solid none none none
+	p
+		font-size: 12px
+
+.main-section
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 50px 0
+	font-size: 65px
+	p
+		padding-left: 25px
+
+.top_info
+	p
+		font-size: 13px
+	display: flex
+	justify-content: space-between
+	padding: 10px 18px
+
+.disp-flex
+	display: flex
+	justify-content: space-between
+
+.w-48
+	width: 48%
+
+.top_info p span
+	color: #676767
+
+#calendar2
+	width: 100%
+	position: relative
+	line-height: 1.2em
+	font-size: 15px
+	text-align: center
+	background: #fff
+	thead tr
+		&:last-child
+			font-size: small
+			color: rgb(85, 85, 85)
+		&:nth-child(1) td
+			&:nth-child(2)
+				color: #fff
+				font-size: 20px
+			&:nth-child(1):hover, &:nth-child(3):hover
+				cursor: pointer
+	tbody td
+		color: rgb(44, 86, 122)
+		&:nth-child(n+6)
+			color: rgb(231, 140, 92)
+	.holiday
+		color: rgb(231, 140, 92)
+	tbody td.today
+		position: relative
+
+tr.top-calendar
+	height: 76px
+	background: #00b2b2
+
+td
+	&.right-icon
+		position: absolute
+		top: 12px
+		right: 12px
+	&.left-icon
+		position: absolute
+		top: 12px
+		left: 12px
+	&.right-icon span, &.left-icon span
+		border: 1px solid #fff
+		border-radius: 50%
+		width: 36px
+		height: 36px
+		font-size: 36px
+		display: block
+		line-height: .8
+
+table#calendar2 td
+	padding: 10px 0
+
+tr.day-calendar td
+	color: #00b2b2
+	font-size: 16px
+
+td.today:before
+	content: ""
+	border: 1px solid #00b2b2
+	width: 40px
+	height: 40px
+	position: absolute
+	border-radius: 50%
+	left: 3px
+	top: 0
+
+.item-switch
+	position: relative
+	border-bottom: 1px solid #29618d
+	display: flex
+	justify-content: space-between
+	padding: 8px
+	align-items: center
+
+.switch
+	background: #fff
+
+.item-switch
+	p
+		color: #676767
+		font-size: 14px
+	label
+		position: relative
+		display: block
+
+.switch input
+	opacity: 0
+	width: 0
+	height: 0
+
+.slider
+	position: absolute
+	cursor: pointer
+	top: 0
+	right: 0
+	width: 45px
+	height: 30px
+	background-color: #EEEEEE
+	-webkit-transition: .4s
+	transition: .4s
+	&:before
+		position: absolute
+		content: ""
+		height: 26px
+		width: 26px
+		left: 0
+		bottom: 2px
+		background-color: #fff
+		-webkit-transition: .4s
+		transition: .4s
+
+input
+	&:checked + .slider
+		background-color: #00b2b2
+	&:focus + .slider
+		box-shadow: 0 0 1px #00b2b2
+	&:checked + .slider:before
+		-webkit-transform: translateX(18px)
+		-ms-transform: translateX(18px)
+		transform: translateX(18px)
+
+/* Rounded sliders
+
+.slider.round
+	border-radius: 34px
+	&:before
+		border-radius: 50%
+
+.left-bottom
+	width: 18.7%
+	position: relative
+
+.drop-section
+	margin-bottom: 30px
+
+.dropdown-block
+	position: relative
+	background: #fff
+	p
+		color: #676767
+		padding: 7px 10px
+	i
+		position: absolute
+		right: 5px
+		top: 4px
+		color: #676767
+		width: 28px
+		border-radius: 50%
+		border: 1px solid #676767
+		height: 28px
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		outline: none
+		transition: .3s
+	&:after
+		content: ""
+		position: absolute
+		right: 38px
+		width: 1px
+		height: 100%
+		background: rgba(103, 103, 103, 0.5)
+		top: 0
+	i:hover
+		background: #00b2b2
+		color: #fff
+		border: 1px solid #fff
+	&.active-drop
+		background: #00b2b2
+		p
+			color: #fff
+		i
+			color: #fff
+			border: 1px solid #fff
+			transform: rotate(180deg)
+			&:hover
+				background: #fff
+				color: #00b2b2
+				border: 1px solid #00b2b2
+
+.drop-result
+	display: none
+	background: #fff
+	margin-top: 8px
+	position: absolute
+	width: 100%
+	z-index: 9
+	border: 1px solid rgba(0, 178, 178, 0.5)
+	ul li
+		color: #676767
+		padding: 8px 10px
+		font-size: 14px
+		border-bottom: 1px solid #00b2b2
+		&:last-child
+			border-bottom: unset
+	&:before
+		content: ""
+		position: absolute
+		top: -9px
+		right: 12px
+		border: 5px solid transparent
+		border-bottom: 8px solid #ffffff
+
+.drop-section.active-drop .drop-result
+	display: block
+
+.bottom-flex
+	display: flex
+
+.dangers-block
+	margin-left: 30px
+	background: #fff
+	width: 29.5%
+	margin-top: -41px
+
+.dangers-item
+	background: #d8d6d6
+	margin: 18px
+	padding: 11px
+	position: relative
+	p
+		font-size: 11px
+
+.feedback-form
+	background: #fff
+	width: 46%
+	margin-left: 30px
+
+.close
+	position: absolute
+	top: 7px
+	border: 1px solid #000
+	border-radius: 50%
+	width: 24px
+	height: 24px
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 16px
+	font-weight: 400
+	padding: 0px 0 2px 0
+	right: 9px
+	opacity: .7
+
+.dangers-green
+	background: #DFF0D8
+	&:before
+		content: ""
+		width: 4px
+		position: absolute
+		height: 100%
+		background: #85B461
+		left: 0
+		top: 0
+	p
+		color: #89B766
+	.close
+		color: #89B766
+		border: 1px solid #85B461
+
+.dangers-blue
+	background: #D9EDF7
+	p
+		color: #67BFD3
+	&:before
+		content: ""
+		width: 4px
+		position: absolute
+		height: 100%
+		background: #67BFD3
+		left: 0
+		top: 0
+	.close
+		color: #67BFD3
+		border: 1px solid #67BFD3
+
+.dangers-yellow
+	background: #FCF8E3
+	p
+		color: #F2C56F
+	&:before
+		content: ""
+		width: 4px
+		position: absolute
+		height: 100%
+		background: #F2C56F
+		left: 0
+		top: 0
+	.close
+		color: #F2C56F
+		border: 1px solid #F2C56F
+
+.dangers-red
+	background: #F2DEDE
+	p
+		color: #D18792
+	&:before
+		content: ""
+		width: 4px
+		position: absolute
+		height: 100%
+		background: #D18792
+		left: 0
+		top: 0
+	.close
+		color: #D18792
+		border: 1px solid #D18792
+
+form.feedback
+	padding: 20px
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.form-div
+	margin-bottom: 20px
+
+.w-50-form
+	width: 48%
+
+.w-70-form
+	width: 68%
+
+.w-30-form
+	width: 28%
+
+.textarea-div
+	width: 100%
+	position: relative
+
+input.control-form
+	width: 100%
+	border: 1px solid #EEEEEE
+	background: #EEEEEE
+	height: 38px
+	padding-left: 15px
+	color: #7d7d7d
+	text-transform: capitalize
+	font-size: 14px
+	font-family: 'Open Sans', sans-serif
+
+textarea.textarea-control
+	width: 100%
+	border: 1px solid #EEEEEE
+	background: #EEEEEE
+	min-height: 60px
+	padding-left: 15px
+	color: #7d7d7d
+	text-transform: capitalize
+	font-size: 14px
+
+button.send-form
+	position: absolute
+	bottom: 7px
+	right: 0
+	background: #00B2B2
+	border: 1px solid #00B2B2
+	color: #fff
+	font-size: 14px
+	padding: 8px 42px
+	cursor: pointer
+	transition: .3s
+	&:hover
+		background: #017f80
+		border: 1px solid #017f80
+
+input.control-form.error-form
+	background: #F2DEDE
+	border: 1px solid #dc919c
+	&::placeholder
+		color: #dc919c
+
+.d-flex
+	display: flex
+
+.top-slider
+	width: 55%
+
+.col
+	padding-left: 15px
+	padding-right: 15px
+
+.xs-menu
+	display: none
+
+.left-middle
+	display: flex
+	flex-wrap: wrap
+	width: 80%
+
+.in-left
+	position: relative
+	width: 25%
+
+.w-75
+	width: 75%
+
+.pl-30
+	padding-left: 30px
+
+.right-middlec
+		width: 25%
